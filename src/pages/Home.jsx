@@ -22,9 +22,9 @@ function Home() {
                 handlePreviousHoroscope();
             }
         };
-        document.addEventListener('keyup', handleKeyDown);
+        document.addEventListener('keydown', handleKeyDown);
         return () => {
-            document.removeEventListener('keyup', handleKeyDown);
+            document.removeEventListener('keydown', handleKeyDown);
         };
     }, [currentIndex]);
 
